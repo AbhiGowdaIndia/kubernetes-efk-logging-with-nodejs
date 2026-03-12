@@ -3,7 +3,7 @@
 This project demonstrates how to deploy a Node.js application on AWS EKS and implement centralized logging using the EFK stack (Elasticsearch, Fluent Bit, and Kibana).
 
 This project deploys a Node.js application on Kubernetes (AWS EKS) and collects application logs using Fluent Bit, which forwards them to Elasticsearch. Kibana is used for log visualization and analysis.
-
+```
 NodeJS App  
      │  
      ▼  
@@ -13,7 +13,8 @@ Fluent Bit (DaemonSet)
 Elasticsearch  
      │  
      ▼  
-Kibana Dashboard  
+Kibana Dashboard 
+``` 
 
 ## Tech Stack
 
