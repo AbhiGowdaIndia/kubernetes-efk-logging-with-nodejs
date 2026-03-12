@@ -94,3 +94,5 @@ helm install fluent-bit fluent/fluent-bit -f fluentbit-values.yaml -n logging
 ```bash
 kubectl apply -f app/
 ```
+
+# ✅ Conclusion
