@@ -91,6 +91,19 @@ helm install fluent-bit fluent/fluent-bit -f fluentbit-values.yaml -n logging
 
 ## 9. Deploy Application
 
+* Review the Kubernetes manifest files located in day-4/kubernetes-manifest.  
+* Apply the Kubernetes manifest files to your cluster by running:
+
+```bash 
+kubectl create ns dev
+```
+* This will create a namespace with name "dev"
+
+```bash
+kubectl apply -k kubernetes-manifest/
+```
+* Using kustomization to run all the yaml files in "kubernetes-manifest" folder.
+
 ```bash
 kubectl apply -f app/
 ```
