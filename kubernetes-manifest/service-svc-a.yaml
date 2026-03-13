@@ -5,10 +5,12 @@ metadata:
     job: node-api
     app: a-service
   name: a-service
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: internet-facing
 spec:
   ports:
   - name: a-service-port
-    port: 80
+    port: 8080
     protocol: TCP
     targetPort: 3001
   selector:
