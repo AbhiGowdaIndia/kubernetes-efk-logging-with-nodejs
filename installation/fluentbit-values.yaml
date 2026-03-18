@@ -425,11 +425,7 @@ config:
         K8S-Logging.Parser On
         K8S-Logging.Exclude off
 
-    [FILTER]
-        Name lua
-        Match kube.*
-        script /fluent-bit/scripts/setIndex.lua
-        call set_index
+   
 
   ## https://docs.fluentbit.io/manual/pipeline/outputs
   outputs: |
