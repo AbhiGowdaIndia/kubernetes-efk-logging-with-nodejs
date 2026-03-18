@@ -408,6 +408,7 @@ config:
         Tag kube.*
         Mem_Buf_Limit 5MB
         Skip_Long_Lines On
+        
 
     [INPUT]
         Name systemd
@@ -417,14 +418,16 @@ config:
 
   ## https://docs.fluentbit.io/manual/pipeline/filters
   filters: |
+  
     [FILTER]
         Name kubernetes
-        Match kube.*
-        Merge_Log On
+        Match kube.var.log.containers.*
+        Kube_Tag_Prefix kube.var.log.containers.
+        Merge_Log Off
         Keep_Log On
         K8S-Logging.Parser On
-        K8S-Logging.Exclude off
-        Lebels On
+        K8S-Logging.Exclude Off
+        Labels On
         Annotations On
 
     [FILTER]
