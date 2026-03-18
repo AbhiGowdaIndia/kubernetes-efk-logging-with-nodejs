@@ -405,7 +405,7 @@ config:
         Name tail
         Path /var/log/containers/*.log
         multiline.parser docker, cri
-        Tag kube.*
+        Tag kube.var.log.containers.*
         Mem_Buf_Limit 5MB
         Skip_Long_Lines On
         
@@ -418,7 +418,7 @@ config:
 
   ## https://docs.fluentbit.io/manual/pipeline/filters
   filters: |
-  
+
     [FILTER]
         Name kubernetes
         Match kube.var.log.containers.*
