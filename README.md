@@ -39,3 +39,15 @@ Make sure the following tools are installed:
 - Docker
 - Helm
 - Node.js
+
+---
+
+# Screenshots
+
+## Prometheus Screenshots
+
+## Kibana Screenshots
+<table>
+<tr><td><img src="images/kibana-1.png" width="100%"></td></tr>
+<tr><td><img src="images/kibana-2.png" width="100%"></td></tr>
+</table>
